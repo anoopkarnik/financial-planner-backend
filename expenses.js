@@ -1,10 +1,10 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
     user: 'anoop',
-    host: 'localhost',
+    host: 'financial-planner.cdi5vdcneeh0.ap-south-1.rds.amazonaws.com',
     database: 'finances',
-    password: 'password',
-    port: 5433
+    password: 'dasika#1992',
+    port: 5432
 })
 
 const getUnplannedExpenses = (body,start_time,end_time) => {

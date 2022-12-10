@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: financial-planner-backend-c
+    image: financial-planner-backend-i
+    build:
+      context: .
+    ports:
+      - 3002:3002
