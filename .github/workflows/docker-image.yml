@@ -28,8 +28,8 @@ jobs:
     - name: Build, tag and push images to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry}}
-        ECR_REPOSITORY: financial_planner_backend
-        IMAGE_TAG: financial_planner_backend_i
+        ECR_REPOSITORY: financial-planner-backend
+        IMAGE_TAG: first
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
