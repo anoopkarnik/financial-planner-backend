@@ -273,5 +273,5 @@ app.delete('/monthlyExpense/:id',expenses.deleteMonthlyExpense)
 app.delete('/monthlyBudget/:id',expenses.deleteMonthlyBudget)
 
 app.listen(PORT,HOST, () =>{
-    console.log(`App running on port ${HOST}:${PORT}`)
+    console.log(`App running on port = ${HOST}:${PORT}`)
 })
